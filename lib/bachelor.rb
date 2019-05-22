@@ -23,7 +23,7 @@ def count_contestants_by_hometown(data, hometown)
   data.each do |season, contestant_data|
     contestant_data.each do |selection|
       selection.each do |key, value|
-        if value == occupation
+        if value == hometown
           return selection["name"]
         end
       end
