@@ -50,4 +50,5 @@ def get_average_age_for_season(data, season)
     age = contestant["age"].mean
     age_array << age
   end
+  return age_array
 end
