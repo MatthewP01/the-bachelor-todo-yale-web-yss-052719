@@ -10,7 +10,7 @@ def get_contestant_name(data, occupation)
   data.each do |season, contestant_data|
     contestant_data.each do |selection|
       selection.each do |key, value|
-        if key == occupation
+        if value == occupation
           return selection["name"]
         end
       end
