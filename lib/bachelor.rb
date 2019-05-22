@@ -51,5 +51,5 @@ def get_average_age_for_season(data, season)
     age_array << age
 
   end
-  return age_array.average
+  return age_array
 end
