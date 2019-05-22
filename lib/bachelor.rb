@@ -9,7 +9,7 @@ end
 def get_contestant_name(data, occupation)
   data[season].each do |cont|
     if cont["occupation"] == occupation
-      return
+      return cont
     end
   end
 end
