@@ -37,7 +37,7 @@ def get_occupation(data, hometown)
     contestant_data.each do |selection|
       selection.find do |key, value|
         if value == hometown
-          return selection["occupation"].first
+          return selection["occupation"]
         end
       end
     end
