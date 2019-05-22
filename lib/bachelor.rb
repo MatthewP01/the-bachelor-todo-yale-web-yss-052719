@@ -1,7 +1,7 @@
 def get_first_name_of_season_winner(data, season)
   data[season].each do |winner|
     if winner["status"] == "Winner"
-      return winner["name"].first
+      return winner["name"].partition
     end
   end
 end
